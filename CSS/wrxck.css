@@ -21,8 +21,9 @@ body {
     line-height: 1.42857143;
     text-align: center;
     color: #fff;
-    background: url(../Images/Background.png) center no-repeat fixed;
-    background-size: cover
+    background: url(../Images/Background.png) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed
 }
 
 .wrxck-center,
@@ -306,45 +307,45 @@ a:hover {
 
 @keyframes fade-in {
     0% {
-        opacity:0;
+        opacity: 0;
     }
     100% {
-        opacity:1;
+        opacity: 1;
     }
 }
 
 @-moz-keyframes fade-in {
     0% {
-        opacity:0;
+        opacity: 0;
     }
     100% {
-        opacity:1;
+        opacity: 1;
     }
 }
 
 @-webkit-keyframes fade-in {
     0% {
-        opacity:0;
+        opacity: 0;
     }
     100% {
-        opacity:1;
+        opacity: 1;
     }
 }
 
 @-o-keyframes fade-in {
     0% {
-        opacity:0;
+        opacity: 0;
     }
     100% {
-        opacity:1;
+        opacity: 1;
     }
 }
 
 @-ms-keyframes fade-in {
     0% {
-        opacity:0;
+        opacity: 0;
     }
     100% {
-        opacity:1;
+        opacity: 1;
     }
 }
