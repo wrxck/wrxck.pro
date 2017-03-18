@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="My name is Matthew, but you can call me Matt. I&apos;m a programmer, web developer &amp; humour enthusiast.">
+        <meta name="author" content="Matthew Hesketh">
+        <title>Matthew Hesketh</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c74343">
+        <meta name="apple-mobile-web-app-title" content="Matthew Hesketh">
+        <meta name="application-name" content="Matthew Hesketh">
+        <meta name="msapplication-TileColor" content="#c74343">
+        <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+        <meta name="theme-color" content="#c74343">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat" rel="stylesheet" type="text/css">
+        <style>
+            html {
+                width: 100%;
+                height: 100%;
+            }
+            body {
+                width: 100%;
+                height: 100%;
+                font-family: Lora, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                color: #fff;
+                background-color: #000;
+                background: url(../img/background.png) no-repeat center;
+                background-attachment: fixed;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                text-transform: uppercase;
+                font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-weight: 700;
+                letter-spacing: 1px;
+                margin: 0 0 35px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 1.5;
+                margin: 0 0 25px;
+            }
+            a {
+            color: #c74343;
+                -webkit-transition: all .2s ease-in-out;
+                -moz-transition: all .2s ease-in-out;
+                transition: all .2s ease-in-out;
+            }
+            a:hover, a:focus {
+                text-decoration: none;
+                color: #aaa;
+            }
+            .navbar-custom {
+                margin-bottom: 0;
+                border-bottom: 1px solid rgba(255, 255, 255, .3);
+                text-transform: uppercase;
+                font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                background-color: #000;
+            }
+            .navbar-custom .navbar-brand {
+                font-weight: 700;
+            }
+            .navbar-custom a {
+                color: #aaa;
+            }
+            .navbar-custom .nav li a {
+                -webkit-transition: background .3s ease-in-out;
+                -moz-transition: background .3s ease-in-out;
+                transition: background .3s ease-in-out;
+            }
+            .navbar-custom .nav li a:hover {
+                color: rgba(255, 255, 255, .8);
+                outline: none;
+                background-color: transparent;
+            }
+            .navbar-custom .nav li a:focus, .navbar-custom .nav li a:active {
+                outline: none;
+                background-color: transparent;
+            }
+            .navbar-custom .nav li.active a {
+                background-color: rgba(255, 255, 255, .3);
+            }
+            .navbar-custom .nav li.active a:hover {
+                color: #fff;
+            }
+            .intro {
+                display: table;
+                width: 100%;
+                height: auto;
+                text-align: center;
+                color: #fff;
+                padding: 100px 0;
+            }
+            .intro .intro-body {
+                display: table-cell;
+                vertical-align: middle;
+            }
+            .intro .intro-body .brand-heading {
+                font-size: 40px;
+            }
+            .intro .intro-body .intro-text {
+                font-size: 18px;
+            }
+            .btn {
+                width: 70px;
+                height: 70px;
+                font-size: 40px;
+                margin: 15px;
+                padding: 7px 16px;
+            }
+            .navbar-custom .navbar-toggle:focus, .navbar-custom .navbar-toggle:active, .navbar-custom .navbar-brand:focus, .navbar-custom .nav li.active {
+                outline: none;
+            }
+            ::-moz-selection, ::selection {
+                text-shadow: none;
+                background: rgba(255, 255, 255, .2);
+            }
+            @media min-width 768px {
+                p {
+                    font-size: 20px;
+                    line-height: 1.6;
+                    margin: 0 0 35px;
+                }
+                .navbar-custom {
+                    border-bottom: none;
+                    letter-spacing: 1px;
+                    background: transparent;
+                    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+                    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+                    transition: background .5s ease-in-out, padding .5s ease-in-out;
+                    padding: 20px 0;
+                }
+                .navbar-custom.top-nav-collapse {
+                    background: #000;
+                    border-bottom: 1px solid rgba(255, 255, 255, .3);
+                    padding: 0;
+                }
+                .intro {
+                    height: 100%;
+                    padding: 0;
+                }
+                .intro .intro-body .brand-heading {
+                    font-size: 100px;
+                }
+                .intro .intro-body .intro-text {
+                    font-size: 26px;
+                }
+            }
+        </style>
+        <script src="https://use.fontawesome.com/b9b6b785d9.js"></script>
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand">&copy; Matthew Hesketh</a>
+                </div>
+            </div>
+        </nav>
+        <header class="intro">
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <h1 class="brand-heading">Hello.</h1>
+                            <p class="intro-text">
+                                My name is Matthew, but you can call me Matt.<br>I&apos;m a programmer, web developer &amp; design enthusiast.
+                            </p>
+                            <a href="https://www.facebook.com/wrxck" class="btn">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="https://twitter.com/wrxck__" class="btn">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="https://uk.pinterest.com/wrxck_/" class="btn">
+                                <i class="fa fa-pinterest"></i>
+                            </a>
+                            <a href="https://instagram.com/wrxck_" class="btn">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="https://github.com/wrxck" class="btn">
+                                <i class="fa fa-github"></i>
+                            </a>
+                            <a href="https://plus.google.com/u/0/113094819254921723773" class="btn">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <script src="https://code.jquery.com/jquery-3.2.0.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+</html>
