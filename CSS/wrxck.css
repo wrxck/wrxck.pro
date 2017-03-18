@@ -293,3 +293,58 @@ a:hover {
 .wrxck-button-snapchat:before {
     content: "\f2ac"
 }
+
+/* Credit to t.me/LKD70 for this snippet! */
+
+.wrxck-fade-in {
+    animation: fade-in ease 1s;
+    -webkit-animation: fade-in ease 1s;
+    -moz-animation: fade-in ease 1s;
+    -o-animation: fade-in ease 1s;
+    -ms-animation: fade-in ease 1s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes fade-in {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fade-in {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-ms-keyframes fade-in {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
