@@ -1,0 +1,295 @@
+@font-face {
+    font-family: "Courier";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../Fonts/Courier/Courier Std Medium.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215
+}
+
+html {
+    font-family: Courier, Monaco, monospace;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size: 10px;
+    -webkit-tap-highlight-color: transparent
+}
+
+body {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    text-align: center;
+    color: #fff;
+    background: url(../Images/Background.png) center no-repeat fixed;
+    background-size: cover
+}
+
+.wrxck-center,
+.wrxck-container {
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+header {
+    display: block
+}
+
+a,
+a:active,
+a:focus,
+a:hover {
+    text-decoration: none;
+    outline: 0
+}
+
+*,
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+a {
+    background-color: transparent;
+    color: #c74343;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+a:focus {
+    outline: -webkit-focus-ring-color auto 5px;
+    outline-offset: -2px
+}
+
+.wrxck-heading {
+    margin: 20px 0 10px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    font-size: 36px
+}
+
+.wrxck-footer {
+    margin-top: 5%;
+    font-size: 85%
+}
+
+.wrxck-container {
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width:768px) {
+    .wrxck-container {
+        width: 750px
+    }
+}
+
+@media (min-width:992px) {
+    .wrxck-container {
+        width: 970px
+    }
+}
+
+@media (min-width:1200px) {
+    .wrxck-container {
+        width: 1170px
+    }
+}
+
+.wrxck-row {
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+.wrxck-center {
+    position: relative;
+    min-height: 1px
+}
+
+@media (min-width:992px) {
+    .wrxck-center {
+        float: left;
+        width: 66.66666667%;
+        margin-left: 16.66666667%
+    }
+}
+
+.wrxck,
+body,
+html {
+    width: 100%;
+    height: 100%
+}
+
+.wrxck-button {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    line-height: 1.42857143;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: 4px
+    width: 2em;
+    height: 2em;
+    font-size: 1.25em;
+    margin: .5em;
+    padding: .5em 1em
+}
+
+.wrxck-button:active:focus,
+.wrxck-button:focus {
+    outline: -webkit-focus-ring-color auto 5px;
+    outline-offset: -2px
+}
+
+.wrxck-button:focus,
+.wrxck-button:hover {
+    text-decoration: none;
+    color: #aaa
+}
+
+.wrxck-button:active {
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
+}
+
+@-ms-viewport {
+    width: device-width
+}
+
+p {
+    font-size: 25px;
+    line-height: 1.5;
+    margin: 0 0 25px
+}
+
+a:focus,
+a:hover {
+    color: #aaa
+}
+
+.wrxck {
+    display: table;
+    color: #fff
+}
+
+.wrxck-body {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.wrxck-heading {
+    font-family: Courier, monospace;
+    font-size: 4.5em
+}
+
+.wrxck-subheading {
+    font-size: 18px
+}
+
+::-moz-selection,
+::selection {
+    text-shadow: none;
+    background: rgba(255, 255, 255, 0.2)
+}
+
+@font-face {
+    font-family: "Font Awesome";
+    src: url("../Fonts/Font Awesome/Font Awesome 4.7.0.eot");
+    src: url("../Fonts/Font Awesome/Font Awesome 4.7.0.eot") format("embedded-opentype"), url("../Fonts/Font Awesome/Font Awesome 4.7.0.woff2") format("woff2"), url("../Fonts/Font Awesome/Font Awesome 4.7.0.woff") format("woff"), url("../Fonts/Font Awesome/Font Awesome 4.7.0.ttf") format("truetype"), url("../Fonts/Font Awesome/Font Awesome 4.7.0.svg") format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+.wrxck-button-twitter,
+.wrxck-button-facebook,
+.wrxck-button-google-plus,
+.wrxck-button-github,
+.wrxck-button-instagram,
+.wrxck-button-tumblr,
+.wrxck-button-trello,
+.wrxck-button-ycombinator,
+.wrxck-button-telegram,
+.wrxck-button-paypal,
+.wrxck-button-lastfm,
+.wrxck-button-pinterest,
+.wrxck-button-reddit,
+.wrxck-button-snapchat {
+    display: inline-block;
+    font-family: "Font Awesome";
+    font-size: 28px;
+    margin: 5px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.wrxck-button-twitter:before {
+    content: "\f099"
+}
+
+.wrxck-button-facebook:before {
+    content: "\f09a"
+}
+
+.wrxck-button-google-plus:before {
+    content: "\f0d5"
+}
+
+.wrxck-button-github:before {
+    content: "\f113"
+}
+
+.wrxck-button-instagram:before {
+    content: "\f16d"
+}
+
+.wrxck-button-tumblr:before {
+    content: "\f173"
+}
+
+.wrxck-button-trello:before {
+    content: "\f181"
+}
+
+.wrxck-button-ycombinator:before {
+    content: "\f1d4"
+}
+
+.wrxck-button-telegram:before {
+    content: "\f1d8"
+}
+
+.wrxck-button-paypal:before {
+    content: "\f1ed"
+}
+
+.wrxck-button-lastfm:before {
+    content: "\f202"
+}
+
+.wrxck-button-pinterest:before {
+    content: "\f231"
+}
+
+.wrxck-button-reddit:before {
+    content: "\f281"
+}
+
+.wrxck-button-snapchat:before {
+    content: "\f2ac"
+}
