@@ -7,37 +7,26 @@
 }
 
 html {
-    font-family: "Inconsolata", monospace;
+    font-family: "Inconsolata", Courier, monospace;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     font-size: 10px;
-    -webkit-tap-highlight-color: transparent;
 }
 
 body {
+    display: block;
     margin: 0;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.5;
     text-align: center;
     color: #fff;
     width: 100%;
     height: 100%;
-    max-width: 100%;
-    max-height: 100%;
     background-color: #000;
     background-image: url("../Images/Background.png");
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
-}
-
-.wrxck-center,
-.wrxck-container {
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-header {
-    display: block;
 }
 
 a,
@@ -48,34 +37,25 @@ a:hover {
     outline: 0;
 }
 
-*,
-:after,
-:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 a {
     background-color: transparent;
     color: #178c4e;
+    transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-}
-
-a:focus {
-    outline: -webkit-focus-ring-color auto 5px;
-    outline-offset: -2px;
 }
 
 .wrxck-heading {
-    margin: 20px 0 10px;
+    margin: 0 10px;
     font-family: inherit;
     font-weight: 500;
     line-height: 1.5;
     color: inherit;
-    font-size: 36px;
+    font-size: 4.5em;
+}
+
+.wrxck-subheading {
+    font-size: 18px;
 }
 
 .wrxck-footer {
@@ -87,6 +67,8 @@ a:focus {
 .wrxck-container {
     margin-right: auto;
     margin-left: auto;
+    max-width: 66.6666666667%;
+    padding: 0 15px;
 }
 
 @media (min-width: 768px) {
@@ -107,102 +89,19 @@ a:focus {
     }
 }
 
-.wrxck-row {
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-.wrxck-center {
-    position: relative;
-    min-height: 100%;
-}
-
-@media (min-width: 992px) {
-    .wrxck-center {
-        float: left;
-        width: 66.66666667%;
-        width: calc(100% / (3 / 2));
-        margin-left: 16.66666667%;
-        margin-left: calc(100% / 6);
-    }
-}
-
-.wrxck,
-body,
-html {
-    width: 100%;
-    height: 100%;
-}
-
 .wrxck-button {
-    display: inline-block;
-    margin-bottom: 0;
-    font-weight: 400;
     line-height: 1.5;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    width: 2em;
-    height: 2em;
-    font-size: 1.25em;
-    margin: 0.5em;
-    padding: 0.5em 1em;
-}
-
-.wrxck-button:active,
-.wrxck-button:focus,
-.wrxck-button:hover {
-    outline: -webkit-focus-ring-color auto 5px;
-    outline-offset: -2px;
-    text-decoration: none;
-}
-
-@-ms-viewport {
-    width: device-width;
-}
-
-p {
-    font-size: 25px;
-    line-height: 1.5;
-    margin: 0 0 25px;
-}
-
-a:focus,
-a:hover {
-    color: #aaa;
-}
-
-.wrxck {
-    display: table;
-    color: #fff;
-}
-
-.wrxck-body {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.wrxck-heading {
-    font-size: 4.5em;
-}
-
-.wrxck-subheading {
-    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    padding: 15px;
 }
 
 .wrxck-logo {
     display: inline-block;
     width: 200px;
     height: 200px;
-    margin: 15px;
+    margin: 50px;
     border-radius: 100px;
     background: url("../Images/Logo.png") no-repeat center;
     background-size: 200px 200px;
@@ -241,9 +140,6 @@ a:hover {
     font-family: "Font Awesome";
     font-size: 28px;
     margin: 5px;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 .twitter:before {
@@ -319,9 +215,6 @@ a:hover {
 .wrxck-fade-in {
     animation: fade-in ease 0.7s;
     -webkit-animation: fade-in ease 0.7s;
-    -moz-animation: fade-in ease 0.7s;
-    -ms-animation: fade-in ease 0.7s;
-    -o-animation: fade-in ease 0.7s;
 }
 
 @keyframes fade-in {
@@ -342,46 +235,18 @@ a:hover {
     }
 }
 
-@-moz-keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-ms-keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 .wrxck-bounce {
     display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px transparent;
     position: relative;
     padding-right: 2.2em;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    -webkit-transform: perspective(1px) translateZ(0);
+    -moz-transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
     transition-duration: 0.3s;
     -webkit-transition-duration: 0.3s;
     -moz-transition-duration: 0.3s;
-    -ms-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
 }
 
 .wrxck-bounce:before {
@@ -391,23 +256,15 @@ a:hover {
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    -o-transform: translateZ(0);
     transition-duration: 0.3s;
     -webkit-transition-duration: 0.3s;
     -moz-transition-duration: 0.3s;
-    -ms-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
     transition-property: transform;
     -webkit-transition-property: transform;
     -moz-transition-property: transform;
-    -ms-transition-property: transform;
-    -o-transition-property: transform;
     transition-timing-function: ease-out;
     -webkit-transition-timing-function: ease-out;
     -moz-transition-timing-function: ease-out;
-    -ms-transition-timing-function: ease-out;
-    -o-transition-timing-function: ease-out;
 }
 
 .wrxck-bounce:hover:before,
@@ -416,11 +273,7 @@ a:hover {
     transform: scale(1.5);
     -webkit-transform: scale(1.5);
     -moz-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    -o-transform: scale(1.5);
     transition-timing-function: cubic-bezier(0.5, 2, 0.3, -0.3);
     -webkit-transition-timing-function: cubic-bezier(0.5, 2, 0.3, -0.3);
     -moz-transition-timing-function: cubic-bezier(0.5, 2, 0.3, -0.3);
-    -ms-transition-timing-function: cubic-bezier(0.5, 2, 0.3, -0.3);
-    -o-transition-timing-function: cubic-bezier(0.5, 2, 0.3, -0.3);
 }
