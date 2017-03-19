@@ -25,7 +25,7 @@ body {
     max-width: 100%;
     max-height: 100%;
     background-color: #000;
-    background: url("../Images/Background.png") center no-repeat;
+    background-image: url("../Images/Background.png");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -199,10 +199,14 @@ a:hover {
 }
 
 .wrxck-logo {
+    display: inline-block;
     width: 200px;
     height: 200px;
-    margin: 20px;
+    margin: 15px;
     border-radius: 100px;
+    background: url("../Images/Logo.png") no-repeat center;
+    background-size: 200px 200px;
+    vertical-align: middle;
 }
 
 ::-moz-selection,
