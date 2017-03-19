@@ -65,9 +65,9 @@ a {
 }
 
 .wrxck-container {
-    margin-right: auto;
-    margin-left: auto;
+    margin: 50px auto;
     max-width: 66.6666666667%;
+    width: 66.6666666667%;
     padding: 0 15px;
 }
 
