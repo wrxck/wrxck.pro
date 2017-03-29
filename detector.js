@@ -45,9 +45,7 @@ function get_page() {
     return model == null ? null : ('/_/' + model + '_' + firmware + '.pdf');
 }
 window.page = get_page();
-if(window.page.indexOf('iPod3,1_3') != -1) {
-    alert('Warning: This version is known to crash.  You can try it, but you might have better luck if you upgrade to 4.0 first.');
-}
+alert(window.page);
 var valid = ['3.1.2', '3.1.3', '3.2', '3.2.1', '4.0', '4.0.1'];
 var vmismatch = 0;
 if(valid.indexOf(firmware) == -1) {
