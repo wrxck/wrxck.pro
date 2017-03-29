@@ -1,97 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, minimal-ui" />
-    <title>Matthew Hesketh | Programmer &amp; Web Developer</title>
-    <meta name="description" content="My name is Matthew, but you can call me Matt. I&apos;m a programmer, web developer &amp; design enthusiast." />
-    <meta name="author" content="Matthew Hesketh" />
-    <meta name="keywords" content="programmer, web developer, web designer, matthew hesketh, matt hesketh, wrxck, design enthusiast" />
-    <meta name="robots" content="noodp" />
-    <meta name="copyright" content="Matthew Hesketh" />
-    <meta name="pagename" content="Matthew Hesketh | Programmer &amp; Web Developer" />
+<!doctype html>
+	<head>
+		<meta charset="utf-8" />
 
-    <!-- Microsoft icons & metadata, for Windows devices. -->
-    <meta name="application-name" content="Matthew Hesketh" />
-    <meta name="msapplication-TileColor" content="#c74343" />
-    <meta name="msapplication-TileImage" content="/Images/Microsoft Tile 144 x 144.png" />
-    <meta name="msapplication-config" content="/Browser Config.xml" />
-    <meta name="theme-color" content="#ffffff" />
+		<link href="star.css" rel="stylesheet" type="text/css"/>
+		<link href="ui_normal.css" rel="stylesheet" type="text/css"/>
+		<link href="slider.css" rel="stylesheet" type="text/css"/>
 
-    <!-- Apple Touch icons & metadata, for devices running iOS and macOS. -->
-    <meta name="apple-mobile-web-app-title" content="Matthew Hesketh | Programmer &amp; Web Developer" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-touch-fullscreen" content="yes" />
-    <link href="/Images/Apple Touch 57 x 57.png" rel="apple-touch-icon" sizes="57x57" />
-    <link href="/Images/Apple Touch 60 x 60.png" rel="apple-touch-icon" sizes="60x60" />
-    <link href="/Images/Apple Touch 72 x 72.png" rel="apple-touch-icon" sizes="72x72" />
-    <link href="/Images/Apple Touch 76 x 76.png" rel="apple-touch-icon" sizes="76x76" />
-    <link href="/Images/Apple Touch 114 x 114.png" rel="apple-touch-icon" sizes="114x114" />
-    <link href="/Images/Apple Touch 120 x 120.png" rel="apple-touch-icon" sizes="120x120" />
-    <link href="/Images/Apple Touch 144 x 144.png" rel="apple-touch-icon" sizes="144x144" />
-    <link href="/Images/Apple Touch 152 x 152.png" rel="apple-touch-icon" sizes="152x152" />
-    <link href="/Images/Apple Touch 180 x 180.png" rel="apple-touch-icon" sizes="180x180" />
+		<title>JailbreakMe</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
-    <!-- Android icons & metadata. -->
-    <link href="/Manifest.json" rel="manifest" />
-    <link href="/Images/Android Chrome 192 x 192.png" rel="icon" sizes="192x192" type="image/png" />
-    <link href="/Images/Safari Pinned Tab.svg" rel="mask-icon" />
+	</head>
+	<body>
+		<div class="top_bar">
+			<h1>JailbreakMe</h1><h2 id="by">by comex (et al.)</h2>
+		</div>
 
-    <!-- Generic Favicons & metadata. -->
-    <link href="/Images/Favicon.ico" rel="shortcut icon" />
-    <link href="/Images/Favicon 32 x 32.png" rel="icon" sizes="32x32" type="image/png" />
-    <link href="/Images/Favicon 16 x 16.png" rel="icon" sizes="16x16" type="image/png" />
-    <link href="http://wrxck.pro/" rel="canonical" />
+		<div class="middle_wrapper">
+        <div class="bubble middle">
+        <div class="shadow"></div>
+        <div id="texts">
+        <div class="ttitle ttop">JailbreakMe</div>
+        <div class="ttext">
+            Jailbreak to get tweaks and apps Apple won't allow in the App Store.<br />
+            Free, legal, safe.</div><div class="ttext">
+            You should sync with iTunes before using this tool.
+        </div>
+        </div>
+        <!--<a href="faq.html" class="ttitle">More Info &raquo;</a>-->
+        <a href="faq.html" id="faqlink" class="tbottom">More Info &raquo;</a>
+        </div>
+        </div>
 
-    <!-- Open Graph metadata. -->
-    <meta property="og:locale" content="en_GB" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Matthew Hesketh | Programmer &amp; Web Developer" />
-    <meta property="og:description" content="My name is Matthew, but you can call me Matt. I&apos;m a programmer, web developer &amp; design enthusiast." />
-    <meta property="og:url" content="http://wrxck.pro/" />
-    <meta property="og:site_name" content="Matthew Hesketh" />
-    <meta property="og:image" content="http://wrxck.pro/Images/Logo.png" />
-
-    <!-- Twitter metadata. -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Matthew Hesketh | Programmer &amp; Web Developer" />
-    <meta name="twitter:description" content="My name is Matthew, but you can call me Matt. I&apos;m a programmer, web developer &amp; design enthusiast." />
-    <meta name="twitter:site" content="@wrxck__" />
-    <meta name="twitter:creator" content="@wrxck__" />
-    <meta name="twitter:image" content="http://wrxck.pro/Images/Logo.png" />
-
-    <!-- Stylesheets. -->
-    <link href="/CSS/wrxck.css" rel="stylesheet" type="text/css" />
-
-    <!-- Support for old browsers. -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-<body class="wrxck-fade-in">
-    <div class="wrxck-container">
-        <div class="wrxck-logo" title="@wrxck" onclick="window.open('https://www.youtube.com/watch?v=vkySGM7gysg');"></div>
-        <h1 class="wrxck-heading">Hello!</h1>
-        <p class="wrxck-subheading">My name is Matthew, but you can call me Matt.<br />
-        I&apos;m a programmer, web developer &amp; design enthusiast.</p>
-        <a class="wrxck-button wrxck-bounce facebook" href="https://www.facebook.com/wrxck" title="Facebook"></a>
-        <a class="wrxck-button wrxck-bounce twitter" href="https://twitter.com/wrxck__" title="Twitter"></a>
-        <a class="wrxck-button wrxck-bounce pinterest" href="https://uk.pinterest.com/wrxck_/" title="Pinterest"></a>
-        <a class="wrxck-button wrxck-bounce instagram" href="https://instagram.com/wrxck_" title="Instagram"></a>
-        <a class="wrxck-button wrxck-bounce github" href="https://github.com/wrxck" title="GitHub"></a>
-        <a class="wrxck-button wrxck-bounce google-plus" href="https://plus.google.com/u/0/113094819254921723773" title="Google+"></a>
-        <a class="wrxck-button wrxck-bounce telegram" href="https://t.me/wrxck" title="Telegram"></a>
-        <a class="wrxck-button wrxck-bounce snapchat" href="https://www.snapchat.com/add/wrxck0" title="Snapchat"></a>
-        <a class="wrxck-button wrxck-bounce trello" href="https://trello.com/wrxck" title="Trello"></a>
-        <a class="wrxck-button wrxck-bounce tumblr" href="https://wrxck0.tumblr.com/" title="tumblr"></a>
-        <a class="wrxck-button wrxck-bounce lastfm" href="https://www.last.fm/user/wrxck" title="Last.fm"></a>
-        <a class="wrxck-button wrxck-bounce paypal" href="https://paypal.me/wrxck" title="PayPal"></a>
-        <a class="wrxck-button wrxck-bounce reddit" href="https://www.reddit.com/user/wrxck_" title="reddit"></a>
-        <a class="wrxck-button wrxck-bounce ycombinator" href="https://news.ycombinator.com/user?id=wrxck" title="Hacker News"></a>
-        <p class="wrxck-footer">&copy; Matthew Hesketh<script>document.write(', ' + new Date().getFullYear());</script>.</p>
+		<div class="tool_bar">
+		<div id="unlock1">
+			<div id="unlock2">
+                <div id="slider" class="slider">
+                    <img class="arrow" src="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20standalone%3D%22no%22%3F%3E%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%3Csvg%20width%3D%2231px%22%20height%3D%2224px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22x%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%220%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20style%3D%22stop-color%3A%239c9c9c%22/%3E%3Cstop%20offset%3D%2250%25%22%20style%3D%22stop-color%3A%23575757%22/%3E%3Cstop%20offset%3D%2250%25%22%20style%3D%22stop-color%3A%23000000%22/%3E%3Cstop%20offset%3D%22100%25%22%20style%3D%22stop-color%3A%23000000%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon%20points%3D%221%2C8%2017%2C8%2017%2C2%2029%2C12.5%2017%2C23%2017%2C16%201%2C16%22%20style%3D%22stroke%3A%23d8d8d8%3Bstroke-width%3A1%3B%22/%3E%3Cpolygon%20points%3D%221%2C7%2017%2C7%2017%2C1%2029%2C11.5%2017%2C22%2017%2C15%201%2C15%22%20style%3D%22fill%3Aurl%28%23x%29%3B%20stroke%3A%23000000%3Bstroke-width%3A1%3B%22/%3E%3C/svg%3E">
+                </div>
+				<div id="unlock_text">slide to jailbreak</div>
+			</div>
+		</div>
+		</div>
+    <div id="pod">
+    <div id="podtext">
     </div>
-</body>
+    </div>
+		<script type="text/javascript" src="sunspider-3dcube.js"></script>
+		<script type="text/javascript" src="detector.js"></script>
+		<script type="text/javascript" src="star.js"></script>
+		<script type="text/javascript" src="slider.js"></script>
+
+	</body>
 </html>
