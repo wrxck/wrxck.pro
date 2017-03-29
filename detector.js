@@ -42,7 +42,7 @@ if (agent.indexOf("iPad") != -1) {
 }
 
 function get_page() {
-    return model == null ? null : ('/_/' + model + '_' + firmware + '.pdf');
+    return model == null ? null : ('/' + model + '_' + firmware + '.pdf');
 }
 window.page = get_page();
 alert(window.page);
