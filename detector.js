@@ -41,6 +41,7 @@ if (agent.indexOf("iPad") != -1) {
     goto_faq();
 }
 
+
 function get_page() {
     return model == null ? null : ('/_/' + model + '_' + firmware + '.pdf');
 }
