@@ -69,45 +69,48 @@ function set_left(left_) {
 
 var startX = null, startLeft, maxLeft;
 
-var vmismatch = 0;
-
-slider.ontouchstart = function(e) {
-    startX = e.targetTouches[0].clientX;
-    startLeft = left;
-    turn_off();
-    slider.style.WebkitTransitionProperty = '';
-    slider.style.WebkitTransitionDuration = '0s';
-    unlock4.style.WebkitTransitionProperty = '';
-    unlock4.style.WebkitTransitionDuration = '0s';
-    maxLeft = slider.parentNode.clientWidth - slider.clientWidth - 5;
-    return false;
-}
-slider.ontouchmove = function(e) {
-    var diff = e.targetTouches[0].clientX - startX;
-    if(diff < 0) diff = 0;
-    else if(diff >= maxLeft) diff = maxLeft;
-    set_left(diff + startLeft);
-}
-window.ontouchend = function() {
-    if(startX == null) return;
-    startX = null;
-    if(maxLeft - left < 15) {
-        jailbreak();
+if(vmismatch == 0) {
+    slider.ontouchstart = function(e) {
+        startX = e.targetTouches[0].clientX;
+        startLeft = left;
+        turn_off();
+        slider.style.WebkitTransitionProperty = '';
+        slider.style.WebkitTransitionDuration = '0s';
+        unlock4.style.WebkitTransitionProperty = '';
+        unlock4.style.WebkitTransitionDuration = '0s';
+        maxLeft = slider.parentNode.clientWidth - slider.clientWidth - 5;
         return false;
     }
-    turn_on();
-    unlock4.style.WebkitTransitionProperty = 'opacity';
-    unlock4.style.WebkitTransitionDuration = '0.5s';
-    var left_ = left;
-    set_left(0);
-    slider.style.WebkitTransform = 'translateX('+left_+'px)';
-    setTimeout(function() {
-        slider.style.WebkitTransitionProperty = '-webkit-transform';
-        slider.style.WebkitTransitionDuration = '0.5s';
-        slider.style.WebkitTransform = 'translateX(0px)';
-    }, 0);
-    return false;
-}
+    slider.ontouchmove = function(e) {
+        var diff = e.targetTouches[0].clientX - startX;
+        if(diff < 0) diff = 0;
+        else if(diff >= maxLeft) diff = maxLeft;
+        set_left(diff + startLeft);
+    }
+    window.ontouchend = function() {
+        if(startX == null) return;
+        startX = null;
+        if(maxLeft - left < 15) {
+            jailbreak();
+            return false;
+        }
+        turn_on();
+        unlock4.style.WebkitTransitionProperty = 'opacity';
+        unlock4.style.WebkitTransitionDuration = '0.5s';
+        var left_ = left;
+        set_left(0);
+        slider.style.WebkitTransform = 'translateX('+left_+'px)';
+        setTimeout(function() {
+            slider.style.WebkitTransitionProperty = '-webkit-transform';
+            slider.style.WebkitTransitionDuration = '0.5s';
+            slider.style.WebkitTransform = 'translateX(0px)';
+        }, 0);
+        return false;
+    }
 
-set_left(0);
-turn_on();
+    set_left(0);
+    turn_on();
+} else {// mismatch
+    unlock1.style.opacity = '0.3';
+    set_left(0);
+}
